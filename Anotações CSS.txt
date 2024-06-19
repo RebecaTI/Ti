@@ -1,0 +1,17 @@
+:: before, :: after    =>    In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
+One simple example of using ::before pseudo-elements is to provide quotation marks. Here we use both ::before and ::after to insert quotation characters.
+
+display:flex   ==>   faz com que o container se expanda ocupando toda a largura do layout(repare na cor preta de background ocupando toda a largura disponível), assim, os outros containers com o mesmo valor de display ficam um embaixo do outro, na direção vertical.
+
+display:inline-flex    ==>   utiliza as mesmas características de exibição do display: inline. Exibindo os elementos em nível de linha, na horizontal, sem ocupar toda a largura do layout.
+
+white-space: nowrap   ==>   
+overflow: scroll   ==>    
+gap: 15px   ==>    
+classe ou id  :nth-child   ==> serve para selecionar apenas os irmaos de uma lista sem precisar criar novas classes;
+flex-grow: 1    ==>   
+
+background:cover   ==> If the background-size is contain or cover : While preserving its intrinsic proportions, the image is rendered at the largest size contained within, or covering, the background positioning area. If the image has no intrinsic proportions, then it's rendered at the size of the background positioning area.
+
+Psquisar essas palavras acima 
+Assistir aos videos

@@ -1,0 +1,18 @@
+Ctrl + alt + m  Para parar a execução do codigo
+alt + shift + f  para formatar o codigo e colocar as indentações
+Ctrl + ; selecionando o conteudo para comentar
+Ctrl + k + c  selecionando varias linhas no VSCode para comentar todas selecionadas
+Ctrl + k + u para tirar o comentario de varias linhas selecionadas
+Ctrl + d para selecionar varias palavras parecidas, mesm em linhas diferentes
+Ctrl + Shift + '  para abrir o terminal do node no VSC
+Ctrl + F  Atalho para encontrar rapidament uma palavra no navegador
+
+Ctrl + click mouse  -> Criar arquivo com 1 clique (apos escrever o nome de um arquivo dentro de src"" , apertar ctrl + clique no nome dentro de src)
+
+
+document.write serve para escrever algo na tela
+
+
+
+19tbn123
+

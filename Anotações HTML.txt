@@ -1,0 +1,3 @@
+Pesquisar sobre <nav>/
+
+span --> A tag span é igual a tag div, ambas servem para delimitar e agrupar outros elementos em HTML. O que as diferencia é que a tag div faz o agrupamento de elementos a nível de bloco e a tag span é a nível de linha.

@@ -1,0 +1,5 @@
+padding: 1 2 3 4 
+1 acima
+2 direita
+3 abaixo
+4 esquerda

@@ -1,0 +1,57 @@
+Para versionar um projeto e publicar no github, é necessário alguns passos
+1 iniciar o git bash (fazendo a pesquisa no windows)
+2 localizar a pasta desejada usando comandos como (ls, cs..) 
+um ex: cd Documents/
+ls
+cd TI/
+ls
+cd '07- JavaScript para Web Crie páginas dinâmicas'/
+ls
+
+03 após estar dentro da pasta usar o comando git init
+
+Para adicionar mudanças
+ usar o comando git add . 
+(O ponto serve para adicionar todos os arquivos dentro da pasta)
+
+Para ver as mudanças usar o comando git status
+
+Para publicar a mudança é necessário fazer o comando abaixo
+git commit -m "Descrição pequena e direta da mudança"
+0 parametro -m indica uma mensagem 
+
+Para mudar ou colocar seu nome
+usar o comando git --local user.name " Seu nome "
+
+Para vizualizar o email e nome do usuario usar os comandos
+git config user.email  (Para email)
+git config user.name   (Para nome)
+
+Para ver todos os comites em só uma linha usar o comando
+git log --oneline
+
+Para ver mais detalhes dos comites usar o comando
+git log -p  
+
+**IMPORTANTE** Para o terminal voltar ao estado normal 
+É so apertar 'q' do teclado
+
+Para avisar ao para ignorar um arquivo
+Criar o aquivo com o começo .gitignore no visualStudioCode e colocar o nome do arquivo desejado, para pastas colocar o /  no final para indicar q é um diretorio
+Ainda é necessário adicionar o gitignore
+
+git init --bare
+Esse parâmetro indica q esse arquivo é puro, ou seja só contem as alterações dos arquivos, não contém uma cópia de cada um dos arquivos fisico de forma que consiga acessar facilmente
+
+
+Para conectar o repositorio ao servidor, usar o comando git remote add (nomeDoArquivoRemoto) (O caminho p repositorio pode ser uma url, um endereço na rede, uma pasta no proprio servidor)
+Ex : git remote add local "C:\Users\mebuf\Documents\TI\07- JavaScript para Web Crie páginas dinâmicas\servidor"
+(Para conseguir todo esse caminho da basta, basta ir ate a pasta desejada e copiar o link acima)
+Ele estará listando todos repositórios remotos que meu repositório conhece
+
+Para ver os git remotes, usar o comando git remote
+
+
+
+
+

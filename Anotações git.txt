@@ -1,0 +1,20 @@
+...  Apertando o ponto 3 vezs entra no codspace
+No terminal usando o comando
+git clone... e o link do git desejado vc clona o projeto p sua maquina
+
+O comando git log mostra as mudanças e qm fez as mudanças
+
+git log --oneline  P ver as mudanças em uma linha
+…or create a new repository on the command line
+echo "# Portfolio-Rebeca" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:RebecaTI/Portfolio-Rebeca.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:RebecaTI/Portfolio-Rebeca.git
+git branch -M main
+git push -u origin main

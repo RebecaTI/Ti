@@ -1,0 +1,11 @@
+pwd: encontra o caminho completo do diretório atual.
+cd: permite navegar até determinada pasta.
+ls: lista todos os arquivos e pastas dentro de um diretório.
+cat: lista os conteúdos de um arquivo de texto na saída padrão (sdout).
+cp: copia arquivos do diretório atual para uma pasta diferente.
+mv: pode ser usado para mover ou renomear arquivos.
+mkdir: cria um novo diretório.
+rm: remove arquivos e diretórios.
+sudo: executa um comando como superusuário.
+find: para buscar arquivos em diretórios.
+Comando history

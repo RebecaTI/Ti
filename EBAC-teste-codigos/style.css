@@ -1,0 +1,95 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+:root{
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --azul-forte: #4328EB;
+  --azul:#015f87;
+  --azul-suave:#E2EAF2;
+
+  /* font family */
+  --content-font: "Poppins", sans-serif;
+   --sansita-font:  "Sansita", sans-serif; /* font-style:  italic   */
+   --roboto-font: "Roboto", sans-serif;/*  */
+}
+
+header{
+  background:var(--branco);
+}
+
+#inicio{
+  padding: 2rem 8rem;
+  background:var(--azul-suave);
+}
+
+.conteiner-begin{
+  display:flex;
+  justify-content:space-between;
+  
+}
+
+#inicio h1{
+  color:var(--azul);
+  text-transform:uppercase;
+  font-family: var(--sansita-font);
+  font-size:3rem;
+  /* font-style:italic; */
+  letter-spacing: 2px;
+  padding-bottom:2rem;
+  flex-wrap: nowrap;
+}
+.content-begin{
+  height:100%;
+  display:flex;
+  /* justify-content: space-between; */
+  align-self:stretch;
+  flex-direction:column;
+}
+
+.content-begin h2{
+  font-size: 1.5rem;
+  font-family:var(--sansita-font);
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+
+.content-begin ul{
+  display:flex;
+  flex-direction: column;
+  align-content:space-around;
+  flex-wrap:wrap;
+}
+
+.text-content{
+  font-family:var(--content-font);
+  padding-bottom: 2rem;
+}
+
+.img-begin{
+  display:flex;
+  justify-content: center;
+  position:relative;
+}
+
+.img-logo{
+  width:15%;
+  position:absolute;
+  left: 0;
+  top:0;
+}
+
+.img-cerebro{
+  width: 65%;
+}
+
+.img-logo-simbol{
+  width:12%;
+  position:absolute;
+  right:0;
+  bottom:0;
+}
