@@ -1,4 +1,19 @@
 body{
-  background:black;
+  background:#000000;
   font-size: 2em;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+li a{
+  text-decoration: none;
+  color:#5b0086;
+}
+
+li a:hover{
+  text-decoration:underline;
 }
