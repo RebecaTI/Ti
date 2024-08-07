@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --background-purple: linear-gradient(#9b30f9, #8844ee);
+}
+
+.back {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #b5b5b5;
+}
+
+.back img {
+  background: var(--background-purple);
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 10%;
+  cursor: pointer;
+}
+
+.back img:hover {
+  background: #a269f8;
+  transition: 0.5s;
+}
+
+.back:hover {
+  transition: 0.5s;
+  color: #8844ee;
+}

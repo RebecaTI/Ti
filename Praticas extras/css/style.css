@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --purple: #a269f8;
+}
+
+body {
+  background: #0e0e0e;
+}
+
+.links_list {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--purple);
+}
+
+.links_list .link_list {
+  padding: 1rem 0.5rem;
+}
+
+.links_list a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.links_list .link_list:hover {
+  background: #191919;
+}

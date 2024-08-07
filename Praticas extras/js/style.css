@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --purple: #a269f8;
+  --hover: #191919;
+}
+
+body {
+  background: #0e0e0e;
+}
+
+h1 {
+  padding-top: 2rem;
+  margin: 2rem 3rem;
+  position: relative;
+  color: #bcbcbc;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+h1::after,
+.item:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--purple);
+}
+
+h1::after {
+  width: 30%;
+}
+
+.item:hover:after {
+  width: 100%;
+}
+
+.item {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
