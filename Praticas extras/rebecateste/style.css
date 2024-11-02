@@ -1,0 +1,226 @@
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+/*==========================================================
+SHAPES
+====================================================*/
+.shape1 {
+  position: absolute;
+  z-index: 5;
+  top: 45%;
+  left: 50%;
+  -webkit-animation: animationFramesOne 60s infinite linear;
+  animation: animationFramesOne 60s infinite linear;
+}
+
+.shape2 {
+  position: absolute;
+  z-index: 6;
+  top: 40%;
+  left: 50%;
+  -webkit-animation-name: rotateme;
+  animation-name: rotateme;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes animationFramesOne {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+    transform: translate(141px, 72px) rotate(72deg);
+  }
+
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+    transform: translate(83px, 122px) rotate(108deg);
+  }
+
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+    transform: translate(-40px, 72px) rotate(144deg);
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes rotateme {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*==========================================================================
+Counters
+=====================================================================*/
+.counters {
+  padding: 3em 2em;
+  background: #4193ff;
+  color: #fff;
+  text-align: center;
+}
+
+.counters>div {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4em 2em;
+}
+
+.counter {
+  position: relative;
+}
+
+.counter h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.counter:not(:last-child)::before {
+  content: '';
+  background: #fff;
+  position: absolute;
+  width: 2px;
+  height: 3em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -1em;
+}
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+  .counters>div {
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+  }
+
+  .counters:not(:last-child)::before {
+    width: 90%;
+    height: 2px;
+    top: initial;
+    right: initial;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*==========================================================
+background-animation-1
+====================================================*/
+
+
+/*==========================================================
+imagem-destorcida
+====================================================*/
+/* .imagem-destorcida {
+  position: relative;
+  width: 300px;
+ 
+height: 300px;
+
+overflow: hidden;
+clip-path: path('M0,10 C50,0, 50,40, 100,20 L100,300 L0,300 Z');
+}
+
+.imagem-destorcida img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+*/
+.imagem-destorcida {
+  overflow: hidden;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+}
+
+.imagem-destorcida img {
+  width: 30%;
+}
