@@ -1,3 +1,7 @@
+* {
+  font-size: "Montserrat", sans-serif;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1536px;
@@ -198,22 +202,7 @@ background-animation-1
 /*==========================================================
 imagem-destorcida
 ====================================================*/
-/* .imagem-destorcida {
-  position: relative;
-  width: 300px;
- 
-height: 300px;
 
-overflow: hidden;
-clip-path: path('M0,10 C50,0, 50,40, 100,20 L100,300 L0,300 Z');
-}
-
-.imagem-destorcida img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-*/
 .imagem-destorcida {
   overflow: hidden;
 
@@ -229,132 +218,90 @@ clip-path: path('M0,10 C50,0, 50,40, 100,20 L100,300 L0,300 Z');
 CARROUCEL
 ====================================================*/
 
-#testimonials {
+#carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  background-color: #f9fafb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 60px;
-  padding: 32px 8%;
+  background: url("./assets/img/bg.jpg") #030728 no-repeat center;
 }
 
-#testimonials_header {
-  text-align: center;
-}
-
-#testimonials_header h1 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #3758f9;
-}
-
-#testimonials_header h2 {
-  color: #111928;
-  font-size: 40px;
-}
-
-#testimonials_header p {
-  color: #637381;
-  font-size: 16px;
-  max-width: 485px;
-}
-
-.swiper {
-  width: 100%;
-  height: 329px;
-  padding-bottom: 60px;
-}
-
-.swiper-slide {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  justify-content: center;
-  box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.07);
-  padding: 34px;
-  border-radius: 12px;
-}
-
-.testimonial-rate {
-  display: flex;
-  gap: 2px;
-}
-
-.testimonial-rate i {
-  color: #f9b707;
-}
-
-.testimonial-quote {
-  color: #637381;
-  font-size: 16px;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.author-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
+.slider-wrapper {
   overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
 }
 
-.author-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.card-list .card-item {
+  color: #ffffff;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
 }
 
-.author-info h3 {
-  font-weight: 600;
-  font-size: 14px;
-  color: #111928;
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
 }
 
-.author-info p {
-  font-size: 12px;
-  color: #8899a8;
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: #fff;
-  width: 25px;
-  height: 25px;
-  color: #3758f9;
-  border: 1px solid #f9fafb;
-  border-radius: 100%;
-  box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.2);
+.card-list .card-item .message-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: #280303;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
 }
 
-.swiper-button-prev::after {
-  content: '\f053';
-  font-family: 'Font Awesome 5 free';
-  font-weight: 900;
-  font-size: 14px;
+.card-list .card-item .message-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-.swiper-button-next::after {
-  content: '\f054';
-  font-family: 'Font Awesome 5 free';
-  font-weight: 900;
-  font-size: 14px;
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 15px;
+  width: 15px;
 }
 
-.swiper-button-prev {
-  left: 3px;
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -50px;
+  transition: 0.2s ease;
 }
 
-.swiper-button-next {
-  right: 3px;
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
 }
 
-.swiper-pagination.active {
-  background-color: #3758f9;
+@media (max-width: 768px) {
+  .slider-wraper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
 }

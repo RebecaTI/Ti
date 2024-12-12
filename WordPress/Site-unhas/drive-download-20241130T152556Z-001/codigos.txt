@@ -1,0 +1,20 @@
+cores---------------------------------------
+roxo:#40004c
+
+roxo escuro: #360040
+
+rosa:#FF0078
+
+Css:------------------------------------------
+
+
+
+
+.devagar {
+    -webkit-animation: pulse 2.0s infinite;
+}
+
+
+
+
+
